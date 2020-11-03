@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 class Header extends Component {
   render() {
@@ -26,7 +30,7 @@ class Header extends Component {
             <li><a className="smoothscroll" href="#about">About</a></li>
 	         <li><a className="smoothscroll" href="#resume">Resume</a></li>
             <li><a className="smoothscroll" href="#portfolio">Works</a></li>
-            <li><a className="smoothscroll" href="#testimonials">Testimonials</a></li>
+            {/* <li><a className="smoothscroll" href="#testimonials">Testimonials</a></li> */}
             <li><a className="smoothscroll" href="#contact">Contact</a></li>
          </ul>
 
@@ -34,10 +38,21 @@ class Header extends Component {
 
       <div className="row banner">
          <div className="banner-text">
-            <h1 className="responsive-headline">I'm {name}.</h1>
-            <h3>I'm a {city} based <span>{occupation}</span>. {description}.</h3>
-            <hr />
-            <ul className="social">
+            <h1 className="responsive-headline" data-aos="zoom-in">I'm {name}.</h1>
+            <h3 
+               data-aos="fade-up"
+               data-aos-easing="linear"
+               data-aos-duration="1000"
+            >
+               I'm a {city} based <span>{occupation}</span>. {description}.
+            </h3>
+            <hr data-aos="fade-down"/>
+            <ul 
+               className="social"
+               data-aos="fade-up"
+               data-aos-easing="linear"
+               data-aos-duration="1500"
+            >
                {networks}
             </ul>
          </div>

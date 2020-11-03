@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 const Contact = ({ data }) => {
    const [url, setUrl] = useState('mailto:test@example.com?subject=subject&body=body');
@@ -36,9 +40,9 @@ const Contact = ({ data }) => {
                         <input value={subject} type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" onChange={e => setSubject(e.target.value)}/>
                      </div>
 
-                     <div>
+                     <div className="message">
                         <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                        <textarea value={message} onChange={e => setMessage(e.target.value)} cols="30" rows="0" id="contactMessage" name="contactMessage"></textarea>
+                        <textarea value={message} onChange={e => setMessage(e.target.value)} cols="37" rows="10" id="contactMessage" name="contactMessage"></textarea>
                      </div>
 
                      <div>
@@ -55,7 +59,11 @@ const Contact = ({ data }) => {
                </div>
             </div>
 
-            <div className="part2">
+            <div className="part2"
+               data-aos="zoom-in"
+               data-aos-easing="linear"
+               data-aos-duration="1000"
+            >
                <h4>ADDRESS AND PHONE</h4>
                <p className="address">
                   {data?.name}<br />

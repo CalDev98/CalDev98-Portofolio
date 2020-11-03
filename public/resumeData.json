@@ -4,7 +4,7 @@
     "occupation": "React & JavaScript Developer",
     "description": "Full Stack React & JS Developer by Day, Founder && Freelancer by Night.",
     "image": "Caleb.jpg",
-    "bio": "My name is Caleb aka C@lDev, I'm a Full Stack React and JavaScript Developer. Currently I'm working as Freelancer. ",
+    "bio": "My name is Caleb aka C@lDev, I'm a Full Stack React and JavaScript Developer. I discovered programming since 2016 where I started with the C language and then switched to C++. In 2018, I started in web development, so I learned HTML, CSS and JS which will become my favorite hobby and my field of work. Today, I work with some of the most popular tools, among them React JS of which I have become a fan. I am Determined, Responsible, Curious to learn, Patient, Cooperative, etc... So the best profile to do your job. Get in touch with me to receive further details, get coached or anything else. ",
     "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
     "email": "caldeservices@gmail.com.com",
     "phone": "+21 26 844 79305",
@@ -14,23 +14,13 @@
       "state": "Morroco",
       "zip": "30000"
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload": "http://timbakerdev.com",
+    "website": "",
+    "resumedownload": "https://drive.google.com/file/d/1_rkhgTuDGnudxeRJ91t4oOEPjraHgunv/view?usp=sharing",
     "social": [
-      {
-        "name": "facebook",
-        "url": "https://www.facebook.com/",
-        "className": "fa fa-facebook"
-      },
       {
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/caleb-delicieux-5a90461b8/",
         "className": "fa fa-linkedin"
-      },
-      {
-        "name": "instagram",
-        "url": "https://www.instagram.com/",
-        "className": "fa fa-instagram"
       },
       {
         "name": "github",
@@ -73,20 +63,16 @@
         "level": "95%"
       },
       {
+        "name": "HTML5",
+        "level": "98%"
+      },
+      {
         "name": "CSS",
         "level": "95%"
       },
       {
-        "name": "Git",
-        "level": "60%"
-      },
-      {
-        "name": "Figma && Adobe XD",
-        "level": "50%"
-      },
-      {
-        "name": "HTML5",
-        "level": "98%"
+        "name": "Javascript",
+        "level": "90%"
       },
       {
         "name": "Bootstrap",
@@ -95,45 +81,47 @@
       {
         "name": "Firebase",
         "level": "70%"
+      },
+      {
+        "name": "Git",
+        "level": "60%"
+      },
+      {
+        "name": "Figma && Adobe XD",
+        "level": "50%"
       }
     ]
   },
   "portfolio": {
     "projects": [
       {
-        "title": "MERN Stack WhatsApp Clone",
-        "category": "WhatsApp Clone built with MERN (MongoDB, ExpressJS, ReactJS, NodeJS)",
-        "image": "whatsapp-mern.jpeg",
-        "url": ""
+        "title": "Amazon Clone",
+        "category": "Fully functional Amazon Clone built with ReactJS and Firebase",
+        "image": "amazonClone.png",
+        "url": "https://clone-fdbc0.web.app/"
       },
       {
-        "title": "MERN Stack TikTok Clone",
-        "category": "TikTok Clone built with MERN (MongoDB, ExpressJS, ReactJS, NodeJS)",
-        "image": "tiktok-mern.jpeg",
-        "url": ""
-      },
-      {
-        "title": "Facebook Clone with React",
-        "category": "Facebook Clone built with ReactJS",
-        "image": "facebook-clone.png",
-        "url": ""
-      },
-      {
-        "title": "React Portofolio",
-        "category": "Portofolio built with ReactJS",
-        "image": "Work.jpg",
-        "url": ""
-      },
-      {
-        "title": "Netflix Clone",
-        "category": "Facebook Clone built with ReactJS",
-        "image": "netflix-clone.jpeg",
-        "url": ""
+        "title": "TikTok Clone",
+        "category": "TikTok Clone built with ReactJS and Firebase",
+        "image": "Tiktok Clone.png",
+        "url": "https://tik-tok-clone-f3e1d.web.app/"
       },
       {
         "title": "ToDo App",
         "category": "Fully functional ToDo App using ReactJS and Firebase",
-        "image": "netflix-clone.jpeg",
+        "image": "todolistApp.png",
+        "url": "https://todo-app-276a0.web.app/"
+      },
+      {
+        "title": "Netflix Clone",
+        "category": "Netflix Clone built with ReactJS and hosted with Firebase",
+        "image": "Netflix-Clone.png",
+        "url": "https://netflix-clone-4beb3.web.app/"
+      },
+      {
+        "title": "React Portofolio",
+        "category": "Portofolio built with ReactJS",
+        "image": "portofolio.png",
         "url": ""
       }
     ]

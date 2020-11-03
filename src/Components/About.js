@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 class About extends Component {
   render() {
@@ -12,16 +16,21 @@ class About extends Component {
       var zip = this.props.data.address.zip;
       var phone= this.props.data.phone;
       var email = this.props.data.email;
-      // var resumeDownload = this.props.data.resumedownload;
+      var resumeDownload = this.props.data.resumedownload;
     }
 
     return (
       <section id="about">
       <div className="row">
-         <div className="three columns">
+         <div className="three columns" data-aos="fade-up">
             <img className="profile-pic"  src={profilepic} alt="Caleb Profile Pic" />
          </div>
-         <div className="nine columns main-col">
+         <div 
+            className="nine columns main-col"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+         >
             <h2>About Me</h2>
 
             <p>{bio}</p>
@@ -37,11 +46,11 @@ class About extends Component {
                      <span>{email}</span>
 					   </p>
                </div>
-               {/* <div className="columns download">
+               <div className="columns download">
                   <p>
                      <a href={resumeDownload} className="button"><i className="fa fa-download"></i>Download Resume</a>
                   </p>
-               </div> */}
+               </div>
             </div>
          </div>
       </div>

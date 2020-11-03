@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 class Resume extends Component {
   render() {
@@ -26,11 +30,20 @@ class Resume extends Component {
       <section id="resume">
 
       <div className="row education">
-         <div className="three columns header-col">
-            <h1><span>Education</span></h1>
+        <div 
+          className="three columns header-col">
+            <h1 
+              data-aos="fade-right"
+              data-aos-easing="linear"
+              data-aos-duration="1500"><span>Education</span></h1>
          </div>
 
-         <div className="nine columns main-col">
+         <div 
+          className="nine columns main-col"
+          data-aos="fade-left"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+         >
             <div className="row item">
                <div className="twelve columns">
                  {education}
@@ -42,31 +55,47 @@ class Resume extends Component {
 
       <div className="row work">
 
-         <div className="three columns header-col">
+         <div 
+            className="three columns header-col"
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+         >
             <h1><span>Work</span></h1>
          </div>
 
-         <div className="nine columns main-col">
+         <div className="nine columns main-col"
+            data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+         >
           {work}
         </div>
-    </div>
+      </div>
 
 
 
       <div className="row skill">
 
-         <div className="three columns header-col">
+         <div className="three columns header-col"
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+         >
             <h1><span>Skills</span></h1>
          </div>
 
          <div className="nine columns main-col">
             <p>{skillmessage}</p>
-				<div className="bars">
-				   <ul className="skills">
-					  {skills}
-					</ul>
-				</div>
-			</div>
+            <div className="bars"
+                data-aos="fade-left"
+                data-aos-easing="linear"
+                data-aos-duration="1000">
+              <ul className="skills">
+                {skills}
+              </ul>
+            </div>
+          </div>
       </div>
    </section>
     );
